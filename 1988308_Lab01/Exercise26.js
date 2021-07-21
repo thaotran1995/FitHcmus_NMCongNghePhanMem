@@ -1,0 +1,33 @@
+// const prompt = require('prompt-sync')();
+// // Nhập mảng sổ nguyên n phần tử
+//     let n = parseInt(prompt("nhap gia tri so nguyen N: " ));
+//     let arr = [];
+//     for(let i = 0; i < n; i++)
+//     {
+//         arr[i] = parseInt(prompt("Nhập phần tử arr[" +i+"]: "));
+//     }
+//     console.log(arr);
+// Tìm phần tử chỉ xuất hiện một lần
+    // sắp xếp mảng
+    function find_Uni_Array(arr)
+    {
+        let result = [];
+        for(let i = 0; i < arr.length; i++){
+            let count = 0;
+            for(let j = 0; j < arr.length; j++)
+            {
+                if(arr[i]== arr[j]&&i!=j)
+                {
+                    count = 1;
+                }
+            }
+            if(count == 0)
+            {
+                result.push(arr[i]);
+            }
+        }
+        return result;
+    }
+    
+    console.log(find_Uni_Array([10,20,30,20,10,35,50]));
+    

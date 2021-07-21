@@ -16,10 +16,6 @@ function nhapArray(row,col)
 
 }
 function xuatArray(arr){ console.table(arr);}
-function maxArray()
-{
-    // làm sao để truyền tham số là mảng 2 chiều vào hàm 
-}
 
 let n = parseInt(prompt("nhập số dòng N: " ));
 let m = parseInt(prompt("nhập số cột M: " ));

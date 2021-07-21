@@ -7,7 +7,7 @@ for(let i = 0; i < n; i++)
     arr[i] = parseInt(prompt("Nhập phần tử arr[" +i+"]: "));
 }
 console.log(arr);
-// tìm và in ra mảng con có sum lớn nhất
+// tìm và in ra mảng con có sum nhỏ nhất
 let minsum_final = Number.MAX_SAFE_INTEGER;
 let minsum_now = 0;
 let start_index = 0;
