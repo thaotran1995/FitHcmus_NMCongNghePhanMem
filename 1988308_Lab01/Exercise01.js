@@ -1,17 +1,21 @@
-let s = 0;
-const prompt = require('prompt-sync')();
-let n = parseInt(prompt("nhap gia tri só nguyen n : " ));
-if(n <= 3 || n >=50)
+
+function sum01(n)
 {
-    console.log("Vui long nhap so nguyen > 3 va < 50");
-}
-else{
-    for(let i = 0; i <= n; i++)
+    let s = 0;
+    if(n <= 3 || n >=50)
     {
-        s = s + i;
-
+        console.log("Vui lòng nhập số nguyên > 3 va < 50");
+        return undefined;
     }
-    console.log("Tong S = ", s);
-}
+    else{
+        for(let i = 0; i <= n; i++)
+        {
+            s = s + i;
 
+        }
+        return s;
+    }
+}
+// 
+console.log("Tổng S(n): ", sum01(6));
 

@@ -1,11 +1,14 @@
-let S = 0;
-let t = 1;
-const prompt = require('prompt-sync')();
-let n = parseInt(prompt("nhap gia tri so nguyen N: " ));
-for(let i = 1; i <= n; i++)
+function sum11(n)
 {
-    t*= i;
-    S+= t;
+    let s = 0;
+    let t = 1;
+    for(let i = 1; i <= n; i++)
+    {
+        t*= i;
+        s+= t;
 
+    }
+    return s;
 }
-console.log(" Gia tri S(n) = ", S);
+// In kết quả với giá trị n do người dùng nhập 
+console.log("Tổng S(n): ", sum11(4));

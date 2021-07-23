@@ -1,29 +1,29 @@
-    const prompt = require('prompt-sync')();
-// Nhập mảng sổ nguyên n phần tử
-    let n = parseInt(prompt("nhap gia tri so nguyen N: " ));
-    let arr = [];
-    for(let i = 0; i < n; i++)
-    {
-        arr[i] = parseInt(prompt("Nhập phần tử arr[" +i+"]: "));
-    }
-// Sắp xếp mảng tăng dần
+function task24(arr, k)
+{
+    // Sắp xếp mảng tăng dần
     let arr_sort = arr.sort(function(a, b){return a - b});
-    console.log(arr_sort);
-// Nhập giá trị cần tìm
-    let k = parseInt(prompt("nhập giá trị cần tìm k: " ));
+    // tìm giá trị k trong mảng đã sắp xếp
     let find = false;
     for(let i = 0; i< arr_sort.length;i++)
     {
+        // Nếu tìm thấy in ra màn hình vị trí của k
         if(arr_sort[i] == k)
         {
             find = true;
-            console.log("giá trị k cần tìm nằm ở vị trí index : ", i);
+            console.log("giá trị  cần tìm nằm ở vị trí index : ", i);
             break;
         }
     }
-    if(find == false)
+    if(find == false) // Nếu không tìm thấy thì chèn k vào đúng vị trí trong mảng
     {
         arr_sort[arr_sort.length] = k;
         arr_sort.sort(function(a, b){return a - b});
         console.log(arr_sort);
     }
+    
+}
+
+// chạy thử 
+task24([1, 2, 4, 5, 6],5); // tìm vị trí của 5 trong mảng [1, 2, 4, 5, 6]
+task24([1, 2, 4, 5, 6],7); // tìm vị trí của 7 trong mảng [1, 2, 4, 5, 6]
+task24([1, 2, 4, 5, 6],3); // tìm vị trí của 3 trong mảng [1, 2, 4, 5, 6]

@@ -1,11 +1,12 @@
-let T = 0;
-const prompt = require('prompt-sync')();
-let n = parseInt(prompt("nhap gia tri so nguyen N: " ));
-let x = parseInt(prompt("nhap gia tri so nguyen X: " ));
-
-for(let i = 1; i <= n; i++)
+function sum13(x,n)
 {
-    T += x**(i*2);
+    let T = 0;
+    for(let i = 1; i <= n; i++)
+    {
+        T += x**(i*2);
 
+    }
+    return T;
 }
-console.log(" Gia tri T(x,n) = ", T);
+// In kết quả với giá trị x và n do người dùng nhập 
+console.log("T(x,n) =  ", sum13(2,3));

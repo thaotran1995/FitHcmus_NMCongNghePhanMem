@@ -1,11 +1,12 @@
-let T = 1;
-const prompt = require('prompt-sync')();
-let n = parseInt(prompt("nhap gia tri so nguyen N: " ));
-let x = parseInt(prompt("nhap gia tri so nguyen X: " ));
-
-for(let i = 1; i <= n; i++)
+function power10(x,n)
 {
-    T*= x;
-
+    let T = 1;
+    for(let i = 1; i <= n; i++)
+    {
+        T*= x;
+    }
+    return T;
 }
-console.log(" Gia tri T(x,n) = ", T);
+
+// In kết quả với giá trị x và n do người dùng nhập 
+console.log("T(x,n) =  ", power10(3,2));

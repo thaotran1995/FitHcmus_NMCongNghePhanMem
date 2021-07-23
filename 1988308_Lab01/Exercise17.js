@@ -1,10 +1,13 @@
-let S = 1;
-const prompt = require('prompt-sync')();
-let n = parseInt(prompt("nhap gia tri só nguyen N: " ));
-
-for(let i = 1; i <= n; i++)
+function factorial17(n)
 {
-    S *= i;
+    let S = 1;
+    for(let i = 1; i <= n; i++)
+    {
+        S *= i;
 
+    }
+    return S;
 }
-console.log("Tong S(n) = ", S);
+
+// In kết quả với giá trị n do người dùng nhập 
+console.log("S(n): ", factorial17(4));

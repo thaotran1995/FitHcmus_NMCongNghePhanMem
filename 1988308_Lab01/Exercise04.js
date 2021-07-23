@@ -1,15 +1,19 @@
-let s = 0.0;
-const prompt = require('prompt-sync')();
-let n = parseInt(prompt("nhap gia tri so nguyen N: " ));
-if(n <= 9 )
+function sum04(n)
 {
-    console.log("Vui long nhap so nguyen > 9");
-}
-else{
-    for(let i = 1; i <= n; i++)
+    let s = 0.0;
+    if(n <= 9 )
     {
-        s += 1.0/(2*i);
-
+        console.log("Vui long nhap so nguyen > 9");
+        return undefined;
     }
-    console.log("Tong S = ", s);
+    else{
+        for(let i = 1; i <= n; i++)
+        {
+            s += 1.0/(2*i);
+
+        }
+        return s;
+    }
 }
+// In kết quả với giá trị n do người dùng nhập 
+console.log("Tổng S(n): ", sum04(10));

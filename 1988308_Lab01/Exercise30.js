@@ -1,5 +1,5 @@
-// Hàm Tìm ra chuỗi dài nhất trong mảng
-function isUniqueString(str){
+// Hàm kiểm tra chuỗi chứa ký tự duy nhất không
+function task30(str){
 
     let  arr_char = str.split('');
     arr_char.sort();
@@ -10,5 +10,5 @@ function isUniqueString(str){
     }
     return true;
 }
-// Gọi hàm
-console.log(isUniqueString("anchdgv"));
+// chạy thử
+console.log(task30("anchdgvn"));

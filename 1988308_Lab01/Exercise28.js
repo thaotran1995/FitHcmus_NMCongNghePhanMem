@@ -1,4 +1,4 @@
-function numberOfways(n)
+function task28(n)
 {
     if (n == 1) {
         return 1;
@@ -13,4 +13,5 @@ function numberOfways(n)
     result = arr[n];
     return result;
 }
-console.log(numberOfways(7));
+// Chạy thử với n = 6
+console.log(task28(6));

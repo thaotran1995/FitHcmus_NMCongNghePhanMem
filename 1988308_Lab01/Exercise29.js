@@ -1,4 +1,3 @@
-const prompt = require('prompt-sync')();
 // Hàm Tìm ra chuỗi dài nhất trong mảng
 function findMaxLeghtString(arr){
 
@@ -7,5 +6,5 @@ function findMaxLeghtString(arr){
     result = arr.filter(v => v.length == max);
     return result;
 }
-// Gọi hàm
+// chạy thử với mảng ["cat", "dog","pig", "is"]
 console.log(findMaxLeghtString(["cat", "dog","pig", "is"]));
